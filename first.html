@@ -21,13 +21,15 @@
 		
 	</figure>
 
-	<form action="http://www.meigic.tw/test.php">
-	<label>Nickname:</label>
-	<input name="Nickname" type="text" />
-	<label>Email:</label>
-	<input name="Email" type="email" />
-	<label>Password:</label>
-	<input name="Password" type="password" />
+	<form method="post" enctype="multipart/form-data" action="http://www.meigic.tw/test.php">
+	<label for="nickname">Nickname:</label>
+	<input id="nickname" name="Nickname" type="text" placeholder="putin" />
+	<label for="email" >Email:</label>
+	<input id="email" name="Email" type="email" value="test@google.com"/>
+	<label for="password">Password:</label>
+	<input id="password" name="Password" type="password" />
+	<label for="file">File:</label>
+	<input id="file"name="File" type="file" />
 	<button>Sign up </button>
 	</form>
 
